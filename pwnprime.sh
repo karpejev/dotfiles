@@ -35,6 +35,11 @@ function java_setup() {
 }
 
 function enum_tools() {
+    #install Threader3000 (my first edit thingy)
+    pip3 install threader3000
+    sudo ln -s $(pwd)/threader3000.py /usr/local/bin/threader3000
+    
+    
     # Set up rustscan
     wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1_amd64.deb -O ~/rustscan_2.0.1_amd64.deb
     sudo apt install -y ~/rustscan_2.0.1_amd64.deb
